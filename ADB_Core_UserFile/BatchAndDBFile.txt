@@ -1,0 +1,1 @@
+BatchPath=C:\ADB_Core_UserFile\BatchFile\;SQL_TableName=Table

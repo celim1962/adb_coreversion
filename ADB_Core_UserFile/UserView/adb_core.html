@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>裝置控制介面</title>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 取消引用vue-->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+     crossorigin="anonymous" />
+</head>
+<body>
+
+    <div id="app" >
+        <div>
+            <h1 class="header">平板控制介面</h1>            
+        </div>
+
+        <input type="hidden" id="hidd_allip">  <!--被勾選的ip會放在這邊-->
+
+        <div id="btn_control_area" ><!-- 動作控制區域 -->
+            <div>
+                <input type="button" class="Btn_action" id="Btn_bi_start" value="進入app">          
+                <input type="button" class="Btn_action" id="Btn_bi_rein" value="重啟app">
+            </div>
+            
+            <div>
+                <input type="button" class="Btn_action" id="Btn_bi_reset" value="返回桌面">            
+                <input type="button" class="Btn_action" id="Btn_bi_reboot" value="重新開機">
+            </div>
+        </div>
+       
+        <div>
+            <table class="table table-striped table-fix">
+                <thead>
+                    <tr>                    
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

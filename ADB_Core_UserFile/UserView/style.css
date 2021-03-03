@@ -1,0 +1,62 @@
+body{
+    width: 100%;
+}
+#app{
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top:3%;
+}
+
+
+#btn_control_area{
+    /* border: 1px solid blue; */
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+    margin:2% auto;
+}
+#btn_control_area > div:nth-child(n){
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.Btn_action{
+    /* border: 1px solid red; */
+    width:40%;
+    height: 60px;
+}
+@media (max-width:500px){
+    #btn_control_area{
+        /* border:1px solid blue; */
+        display: block;
+    }
+    #btn_control_area > div:nth-child(n){
+         /*border: 1px solid red;*/ 
+        width: 100%;
+    }
+    .Btn_action{
+        /* border: 1px solid red; */
+        width: 50%;
+        height: 60px;
+    }
+}
+
+
+.table-fix{
+    width: 60%!important;
+    margin:auto;
+    border: 1px solid black;
+}
+
+th div{
+    display: flex;
+    justify-content: center;
+}
+td div{
+    display: flex;
+    justify-content: center;
+}
